@@ -1,0 +1,238 @@
+/* ✅ Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ✅ Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(14, 4, 48), #9a3ec5);
+    overflow: hidden;
+}
+
+/* ✅ Hide Elements */
+.hide {
+    display: none;
+}
+
+/* ✅ Glassmorphism Card Style */
+.start-screen, 
+.rules-box, 
+.quiz-box, 
+.result-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(191, 195, 199, 0.2);
+    width:500px;
+    max-width: 90%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ✅ Quiz Image */
+.quiz-image {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+/* ✅ Start Button */
+.start-screen button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #00c6ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start-screen button:hover {
+    background: #0072ff;
+}
+
+/* ✅ Rules Box */
+.rules-box h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rules-box ul {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+}
+
+.rules-box ul li {
+    color: white;
+    margin: 5px 0;
+}
+
+/* ✅ Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button#exit-btn {
+    background: #ff4b5c;
+    color: white;
+}
+
+button#exit-btn:hover {
+    background: #d12f40;
+}
+
+button#continue-btn {
+    background: #28a745;
+    color: white;
+}
+
+button#continue-btn:hover {
+    background: #218838;
+}
+
+/* ✅ Quiz Box */
+.quiz-box header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* ✅ Timer */
+.timer {
+    background: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+/* ✅ Question Container */
+#question-container {
+    margin-top: 20px;
+}
+
+#question-container h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.option {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: #f0f0f0;
+}
+
+/* ✅ Answer Feedback */
+.option.correct {
+    background: #28a745;
+    color: white;
+}
+
+.option.wrong {
+    background: #ff4b5c;
+    color: white;
+}
+
+/* ✅ Footer */
+footer {
+    margin-top: 20px;
+    color: white;
+}
+
+/* ✅ Next Button */
+#next-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#next-btn:hover {
+    background: #005ecb;
+}
+
+/* ✅ Result Box */
+.result-box h2 {
+    color: white;
+}
+
+#score-text {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* ✅ Replay & Quit Buttons */
+#replay-btn {
+    background: #28a745;
+    color: white;
+}
+
+#replay-btn:hover {
+    background: #218838;
+}
+
+#quit-btn {
+    background: #ff4b5c;
+    color: white;
+}
+
+#quit-btn:hover {
+    background: #d12f40;
+}
+
+/* ✅ Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

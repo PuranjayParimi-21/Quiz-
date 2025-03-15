@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="start-screen">
+        <img src="./Screenshot 2025-03-15 000445.png" alt="Quiz Image" class="quiz-image">
+        <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div class="rules-box hide">
+        <h2>Some Rules of this Quiz</h2>
+        <ul>
+            <li>You will have only <b>15 seconds</b> per question.</li>
+            <li>Once you select your answer, it can't be undone.</li>
+            <li>You can't select any option once time goes off.</li>
+            <li>You can't exit from the Quiz while you're playing.</li>
+            <li>You'll get points based on correct answers.</li>
+        </ul>
+        <div class="buttons">
+            <button id="exit-btn">Exit Quiz</button>
+            <button id="continue-btn">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz-box hide">
+        <header>
+            <h2>Quiz Application</h2>
+            <div class="timer">
+                Time Left: <span id="time">15</span>s
+            </div>
+        </header>
+        <section id="question-container"></section>
+        <footer>
+            <p id="question-count">1 of 5 Questions</p>
+            <button id="next-btn" class="hide">Next</button>
+        </footer>
+    </div>
+
+    <div class="result-box hide">
+        <h2>You've completed the Quiz!</h2>
+        <p id="score-text"></p>
+        <div class="buttons">
+            <button id="replay-btn">Replay Quiz</button>
+            <button id="quit-btn">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
